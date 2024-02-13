@@ -1,0 +1,317 @@
+{
+  "login":{
+    "alternatives":"También puedes ingresar con:",
+    "change-password":"Cambiar contraseña",
+    "logout":"Cerrar sesión",
+    "welcome_text":"Por favor inicie sesión para continuar",
+    "welcome_to_simo":"Bienvenido a SIMO",
+    "email":"Correo ...",
+    "password":"Contraseña ...",
+    "Keep_me_logged_in":"Mantenme conectado",
+    "You_do_not_have_an_account?":"¿No tienes cuenta?",
+    "Register_now":"Registrate Ahora",
+    "Recover_password":"Recuperar contraseña",
+    "login":"Iniciar sesión"
+  },
+  "register":{
+    "title":"Registro"
+  },
+  "validation":{
+    "validation_email":"Correo Requerido",
+    "validation_password":"Contrseña Requerida"
+  },
+  "home":{
+    "title-home":"DSF Parking",
+    "administración":"Administración",
+    "configuración":"Configuración",
+    "parqueaderos":"Parqueaderos"
+  },
+  "clients":{
+    "blocks":{
+      "title":"Bloques",
+      "description":"En este componente podra consultar, crear y editar los bloques del parqueadero",
+      "table-data":{
+        "id":"Id",
+        "parking":"Parqueadero",
+        "name":"Nombre",
+        "description":"Descripción"
+      },
+      "detail-blocks":{
+        "id":"Id",
+        "parking":"Parqueadero",
+        "name":"Nombre",
+        "description":"Descripción",
+        "created":"Creación",
+        "updated":"Ultima actualización"
+      }
+    },
+    "devices":{
+      "title":"Dispositivos",
+      "description":"En este componente podra consultar, crear y editar los dispositivos asociados a su parqueadero",
+      "table-data":{
+        "id":"Id",
+        "name":"Nombre",
+        "type":"Tipo",
+        "description":"Descripción"
+      },
+      "detail":{
+        "id":"Id",
+        "zone":"zona",
+        "name":"Nombre",
+        "type":"Tipo",
+        "description":"Descripción",
+        "created":"Creación",
+        "updated":"Ultima actualización"
+      }
+    },
+    "floors":{
+      "title":"Pisos",
+      "description":"En este componente podra consultar, crear y editar los pisos con los que cuenta su parqueadero",
+      "table-data":{
+        "id":"Id",
+        "block":"Bloque",
+        "name":"Nombre",
+        "image":"Imagen",
+        "max-height":"Altura maxima",
+        "iscovered":"Cubierto",
+        "description":"Descripción"
+      },
+      "detail-floors":{
+        "id":"Id",
+        "block":"Bloque",
+        "name":"Nombre",
+        "image":"Imagen",
+        "max-height":"Altura maxima",
+        "iscovered":"Cubierto",
+        "description":"Descripción",
+        "created":"Creación",
+        "updated":"Ultima actualización",
+        "loadImage":"Cargar Imagen",
+        "changeImage":"Cambiar Imagen"
+      }
+    },
+    "parkingLots":{
+      "title":"Parqueaderos",
+      "description":"En este componente podra consultar, crear y editar los parqueaderos asociados a su compañia",
+      "table-data":{
+        "id":"Id",
+        "name":"Nombre",
+        "address":"Dirección",
+        "latitude":"Latitud",
+        "longitude":"Longitud",
+        "description":"Descripción"
+      },
+      "detail-parkingLots":{
+        "id":"Id",
+        "name":"Nombre",
+        "address":"Dirección",
+        "latitude":"Latitud",
+        "longitude":"Longitud",
+        "description":"Descripción",
+        "created":"Creación",
+        "updated":"Ultima actualización"
+      }
+    },
+    "slots":{
+      "title":"Bahias",
+      "description":"En este componente podra consultar, crear y editar las bahias con las que cuenta su piso",
+      "table-data":{
+        "id":"Id",
+        "floor":"Piso",
+        "device":"Dispositivo",
+        "name":"Nombre"
+      },
+      "detail-slots":{
+        "id":"Id",
+        "zone":"zona",
+        "floor":"Piso",
+        "device":"Dispositivo",
+        "name":"Nombre",
+        "created":"Creación",
+        "updated":"Ultima actualización"
+      }
+    },
+    "slotsActivity":{
+      "title":"Actividad de Bahias",
+      "description":"En este componente podra consultar el estado de las bahias",
+      "table-data":{
+        "id":"Id",
+        "slotId":"slotId",
+        "entryTime":"Hora de entrada",
+        "exitTime":"Hora de salida",
+        "totalTime":"Tiempo total"
+      },
+      "detail":{
+        "id":"Id",
+        "slotId":"slotId",
+        "entryTime":"Hora de entrada",
+        "exitTime":"Hora de salida",
+        "totalTime":"Tiempo total",
+        "created":"Creación",
+        "updated":"Ultima actualización"
+      }
+    }
+  },
+  "admin":{
+    "companies":{
+      "title":"Empresas",
+      "description":"En este componente podra consultar, crear y editar empresas",
+      "table-data":{
+        "id":"Id",
+        "identifier":"Identificador",
+        "name":"Nombre",
+        "description":"Descripción",
+        "dbName":"Base de datos",
+        "connectionString":"Cadena de conexión",
+        "csApp":"Chirpstack App",
+        "csTenant":"Chirpstack Tenant"
+      },
+      "detail":{
+        "id":"Id",
+        "identifier":"Identificador",
+        "name":"Nombre",
+        "description":"Descripción",
+        "dbName":"Base de datos",
+        "connectionString":"Cadena de conexión",
+        "csApp":"Chirpstack App",
+        "csTenant":"Chirpstack Tenant",
+        "created":"Creación",
+        "updated":"Ultima actualización"
+      }
+    },
+    "roleTypes":{
+      "title":"Tipos de rol",
+      "description":"En este componente podras consultar, crear y editar los tipos de rol",
+      "table-data":{
+        "id":"Id",
+        "name":"Nombre",
+        "description":"Descripción"
+      },
+      "detail":{
+        "id":"Id",
+        "name":"Nombre",
+        "description":"Descripción",
+        "created":"Creación",
+        "updated":"Ultima actualización"
+      }
+    },
+    "roles":{
+      "title":"Roles",
+      "description":"En este componente podras consultar, crear y editar los roles del sistema",
+      "table-data":{
+        "id":"Id",
+        "type-role":"Tipo de rol",
+        "name":"Nombre",
+        "normalized-name":"Rol normalizado"
+      },
+      "detail":{
+        "id":"Id",
+        "type-role-id":"Tipo de rol id",
+        "type-role":"Tipo de rol",
+        "name":"Nombre",
+        "normalized-name":"Rol normalizado",
+        "created":"Creación",
+        "updated":"Ultima actualización"
+      }
+    },
+    "userRoles":{
+      "title":"Roles de usuario",
+      "description":"En este componente podra consultar, crear y editar los roles de cada usuario",
+      "table-data":{
+        "id":"Id",
+        "user":"Usuario",
+        "userId":"Usuario Id",
+        "roleId":"Rol Id",
+        "role":"Rol",
+        "email":"Email",
+        "rolTypeId":"Id del rol",
+        "rolType":"Tipo de rol"
+      },
+      "detail":{
+        "id":"Id",
+        "user":"Usuario",
+        "userId":"Usuario Id",
+        "roleId":"Rol Id",
+        "role":"Rol",
+        "email":"Email",
+        "rolTypeId":"Id del rol",
+        "rolType":"Tipo de rol",
+        "created":"Creación",
+        "updated":"Ultima actualización"
+      }
+    },
+    "users":{
+      "title":"Usuarios",
+      "description":"En este componente podra consultar, crear y editar los usuarios",
+      "table-data":{
+        "id":"Id",
+        "username":"Nombre de usuario",
+        "normalized-username":"Nombre de usuario normalizado",
+        "first-name":"Nombre",
+        "last-name":"Apellido",
+        "tenant":"Tenant",
+        "isActive":"Estado"
+      },
+      "detail":{
+        "id":"Id",
+        "username":"Nombre de usuario",
+        "userType":"Tipo de usuario",
+        "normalized-username":"Nombre de usuario normalizado",
+        "first-name":"Nombre",
+        "last-name":"Apellido",
+        "tenant":"Tenant",
+        "email":"Email",
+        "phoneNumber":"Numero de celular",
+        "password":"Contraseña",
+        "isActive":"Estado",
+        "created":"Creación",
+        "updated":"Ultima actualización"
+      }
+    },
+    "userTypes":{
+      "title":"Tipos de usuario",
+      "description":"En este componente podra consultar, crear y editar los tipos de usuario del sistema",
+      "table-data":{
+        "id":"Id Tipo de Usuario",
+        "name":"Nombre",
+        "description":"Descripción"
+      },
+      "detail":{
+        "id":"Id Tipo de Usuario",
+        "name":"Nombre",
+        "description":"Descripción",
+        "created":"Creación",
+        "updated":"Ultima actualización"
+      }
+    },
+    "deviceTypes":{
+      "title":"Tipos de dispositivos",
+      "description":"En este componente podra consultar, crear y editar los tipos de dispositivos del sistema",
+      "table-data":{
+        "id":"Id Tipo de dispositivo",
+        "name":"Nombre",
+        "description":"Descripción"
+      },
+      "detail":{
+        "id":"Id Tipo de dispositivo",
+        "name":"Nombre",
+        "description":"Descripción",
+        "created":"Creación",
+        "updated":"Ultima actualización"
+      }
+    }
+  }, 
+  "change-password":{
+    "title":"Cambiar Contraseña"
+  },
+  "contex-menu":{
+    "save":"Guardar",
+    "sensor":"Sensor",
+    "screen":"Pantalla"
+  },
+  "bienvenido": "Bienvenido",
+  "create":"Crear",
+  "search":"Buscar",
+  "cancel":"Cancelar",
+  "save":"Guardar"
+}

@@ -1,0 +1,150 @@
+{
+  "login":{
+    "alternatives":"También puedes ingresar con:",
+    "change-password":"Cambiar contraseña",
+    "logout":"Cerrar sesión"
+  },
+  "home":{
+    "title-home":"DSF Parking",
+    "administración":"Administración",
+    "configuración":"Configuración",
+    "parqueaderos":"Parqueaderos"
+  },
+  "clients":{
+    "blocks":{
+      "title":"Bloques",
+      "description":"En este componente podra consultar, crear y editar los bloques del parqueadero",
+      "table-data":{
+        "id":"Id",
+        "parking":"Parqueadero",
+        "name":"Nombre",
+        "description":"Descripción"
+      },
+      "detail-blocks":{
+        "id":"Id",
+        "parking":"Parqueadero",
+        "name":"Nombre",
+        "description":"Descripción",
+        "created":"Creación",
+        "updated":"Ultima actualización"
+      }
+    },
+    "devices":{
+      "title":"Dispositivos",
+      "description":"En este componente podra consultar, crear y editar los dispositivos asociados a su parqueadero",
+      "table-data":{
+        "id":"Id",
+        "name":"Nombre",
+        "type":"Tipo",
+        "description":"Descripción"
+      }
+    },
+    "floors":{
+      "title":"Pisos",
+      "description":"En este componente podra consultar, crear y editar los pisos con los que cuenta su parqueadero",
+      "table-data":{
+        "id":"Id",
+        "block":"Bloque",
+        "name":"Nombre",
+        "image":"Imagen",
+        "max-height":"Altura maxima",
+        "iscovered":"Cubierto",
+        "description":"Descripción"
+      }
+    },
+    "parkingLots":{
+      "title":"Parqueaderos",
+      "description":"En este componente podra consultar, crear y editar los parqueaderos asociados a su compañia",
+      "table-data":{
+        "id":"Id",
+        "name":"Nombre",
+        "address":"Dirección",
+        "latitude":"Latitud",
+        "longitude":"Longitud",
+        "description":"Descripción"
+      }
+    },
+    "slots":{
+      "title":"Bahias",
+      "description":"En este componente podra consultar, crear y editar las bahias con las que cuenta su piso",
+      "table-data":{
+        "id":"Id",
+        "floor":"Piso",
+        "device":"Dispositivo",
+        "name":"Nombre"
+      }
+    }
+  },
+  "admin":{
+    "companies":{
+      "title":"Empresas",
+      "description":"En este componente podra consultar, crear y editar empresas",
+      "table-data":{
+        "id":"Id",
+        "identifier":"Identificador",
+        "name":"Nombre",
+        "description":"Descripción",
+        "dbName":"Base de datos",
+        "connectionString":"Cadena de conexión",
+        "csApp":"Chirpstack App",
+        "csTenant":"Chirpstack Tenant"
+      }
+    },
+    "roleTypes":{
+      "title":"Tipos de rol",
+      "description":"En este componente podras consultar, crear y editar los tipos de rol",
+      "table-data":{
+        "id":"Id",
+        "name":"Nombre"
+      }
+    },
+    "roles":{
+      "title":"Roles",
+      "description":"En este componente podras consultar, crear y editar los roles del sistema",
+      "table-data":{
+        "id":"Id",
+        "type-role":"Tipo de rol",
+        "name":"Nombre",
+        "normalized-name":"Rol normalizado"
+      }
+    },
+    "userRoles":{
+      "title":"Roles de usuario",
+      "description":"En este componente podra consultar, crear y editar los roles de cada usuario",
+      "table-data":{
+        "id":"Id",
+        "user":"Usuario",
+        "role":"Rol",
+        "email":"Email",
+        "rolType":"Tipo de rol"
+      }
+    },
+    "users":{
+      "title":"Usuarios",
+      "description":"En este componente podra consultar, crear y editar los usuarios",
+      "table-data":{
+        "id":"Id",
+        "username":"Nombre de usuario",
+        "normalized-username":"Nombre de usuario normalizado",
+        "first-name":"Nombre",
+        "last-name":"Apellido",
+        "tenant":"Tenant",
+        "isActive":"Estado"
+      }
+    },
+    "userTypes":{
+      "title":"Tipos de usuario",
+      "description":"En este componente podra consultar, crear y editar los tipos de usuario del sistema",
+      "table-data":{
+        "name":"Nombre",
+        "description":"Descripción"
+      }
+    }
+  }, 
+  "change-password":{
+    "title":"Cambiar Contraseña"
+  },
+  "bienvenido": "Bienvenido",
+  "create":"Crear",
+  "search":"Buscar"
+}

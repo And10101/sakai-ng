@@ -1,0 +1,51 @@
+{
+    "General": {
+      "Ip": "",
+      "Port": "5000",
+      "Version": "v1/",
+      "Api": "api/"
+    },
+  
+    "APIS": {
+      "ApiBase":"http://127.0.0.1:5000/",
+      "ApiLogin": "Account/login/",
+      "ApiLoginGoogle": "Account/LoginWithGoogle/",
+      "ApiRegisterGoogle": "Account/RegisterGoogle/",
+      "ApiGoogleclientId": "229614831463-4ru747tc0ej4ohm35fl4hd2o141f7h9m.apps.googleusercontent.com",
+      "ApiRegister": "account/register/",
+      "ApiDataUser": "Users/",
+      "ApiDevice": "Device/",
+      "ApiDeviceType": "DeviceType/",
+      "ApiGateway":"Gateway/",
+      "ApiCamera":"Camera/",
+      "ApiComboParkingLot": "Combo/ParkingLot/",
+      "ApiComboBlock": "Combo/Block/",
+      "ApiComboFloor": "Combo/Floor/",
+      "ApiComboSlots": "Combo/Slots/",
+      "ApiComboDevices": "Combo/Device/",
+      "ApiComboZones": "Combo/Zone/",
+      "ApiComboDeviceTypes": "DeviceType/ListCombo",
+      "ApiComboTenants": "Tenants/ListCombo",
+      "ApiComboRoles": "Roles/ListCombo",
+      "ApiComboRoleTypes": "RoleType/ListCombo",
+      "ApiComboUserTypes": "UserType/ListCombo",
+      "ApiMaps": "maps/",
+      "ApiCompanies": "Tenants/",
+      "ApiUsers": "Users/",
+      "ApiUsersRoles": "UsersRoles/",
+      "ApiRoles": "Roles/",
+      "ApiRolType": "RoleType/",
+      "ApiUserType": "UserType/",
+      "ApiParkingLots": "ParkingLot/",
+      "ApiBlocks": "Blocks/",
+      "ApiFloor": "Floor/",
+      "ApiZones": "Zones/",
+      "ApiSlots": "Slots/",
+      "ApiSlotsActivity": "SlotsActivity/",
+      "ApiCloudStorage": "CloudStorage/",
+      "ApiChirpStackDevices": "ChirpStack/Devices/",
+      "ApiChirpStackApp": "ChirpStack/App/",
+      "ApiChirpStackTenant": "ChirpStack/Tenant/"
+    }
+  }
+  
