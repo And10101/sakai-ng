@@ -177,6 +177,12 @@
         "csTenant":"Chirpstack Tenant",
         "created":"Creación",
         "updated":"Ultima actualización"
+      },
+      "warnings":{
+        "name":"El nombre es requerido",
+        "identifier":"El identificador es requerido",
+        "deleteSelect":"Esta seguro de ELIMINAR los elementos seleccionados",
+        "delete":"Esta seguro de ELIMINAR"
       }
     },
     "roleTypes":{

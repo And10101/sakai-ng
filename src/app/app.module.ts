@@ -13,7 +13,12 @@ import { NodeService } from './demo/service/node.service';
 import { PhotoService } from './demo/service/photo.service';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core'
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient,HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ThemeOptions } from './theme-options';
+import { TokenInterceptorService } from './diserSoft/service/interceptors/token-interceptor.service';
+import { LoaderInterceptorService } from './diserSoft/service/interceptors/loader-interceptor.service';
+
+
 
 
 
@@ -40,7 +45,18 @@ export function HttpLoaderFactory(http: HttpClient) {
         NodeService,
         PhotoService,
         ProductService,
-    ],
+        ThemeOptions,
+        { 
+          provide: HTTP_INTERCEPTORS, 
+          useClass: TokenInterceptorService, 
+          multi: true 
+        },
+        {
+          provide: HTTP_INTERCEPTORS,
+          useClass: LoaderInterceptorService,
+          multi: true,
+        }
+  ],
     bootstrap: [AppComponent],
 })
 export class AppModule {}

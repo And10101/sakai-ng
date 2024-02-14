@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import settings_json from '../../configuration/settings.json'
-// import { NewTableEventsDTO } from 'DTO/table-events.dto';
+import { NewTableEventsDTO } from 'DTO/table-events.dto';
 import { CompaniesModel } from 'models/components/admin/companies.model';
 
 @Injectable({
@@ -17,15 +17,15 @@ export class CompaniesService{
 
     constructor(private httpClient: HttpClient) {}
 
-    // public getAllCompanies(event:NewTableEventsDTO):Observable<any>{
-    //     const params = new HttpParams()
-    //     .set('pageNumber', event.page.toString())
-    //     .set('pageSize', event.size.toString())
-    //     .set('sort', event.sort.toString())
-    //     return this.httpClient.get<any>(`${this.api_base}${this.api}${this.apiVersion}${this.api_companies}`,{params}).pipe(map((response:any)=>{ 
-    //         return response;
-    //     }));
-    // }
+    public getAllCompanies(event:NewTableEventsDTO):Observable<any>{
+        const params = new HttpParams()
+        .set('pageNumber', event.page.toString())
+        .set('pageSize', event.size.toString())
+        .set('sort', event.sort.toString())
+        return this.httpClient.get<any>(`${this.api_base}${this.api}${this.apiVersion}${this.api_companies}`,{params}).pipe(map((response:any)=>{ 
+            return response;
+        }));
+    }
 
     public getCompanyById(id:string):Observable<any>{
         return this.httpClient.get<any>(`${this.api_base}${this.api}${this.apiVersion}${this.api_companies}${id}`).pipe(map((response:any)=>{ 

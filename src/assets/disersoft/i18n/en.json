@@ -88,6 +88,12 @@
         "connectionString":"Cadena de conexión",
         "csApp":"Chirpstack App",
         "csTenant":"Chirpstack Tenant"
+      },
+      "warnings":{
+        "name":"El nombre es requerido",
+        "identifier":"El identificador es requerido",
+        "deleteSelect":"Esta seguro de ELIMINAR los elementos seleccionados",
+        "delete":"Esta seguro de ELIMINAR"
       }
     },
     "roleTypes":{
